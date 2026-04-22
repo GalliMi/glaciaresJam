@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -18,7 +18,7 @@ public class MineraBehaviour : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        healthBar.fillAmount= maxHealth;
+        healthBar.fillAmount = 1f;
         //healthBar.value = currentHealth;
     }
 
@@ -49,7 +49,7 @@ public class MineraBehaviour : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("El objeto murió");
+        Debug.Log("El objeto muriï¿½");
         Destroy(gameObject);
     }
 

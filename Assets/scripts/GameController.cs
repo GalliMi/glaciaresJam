@@ -31,11 +31,19 @@ public partial class GameController : MonoBehaviour
 
     void InstanciarEnFila(int indice)
     {
-        // 1. Crear la posición (X puede ser 0 o donde quieras que aparezcan)
+        // Validar que se haya seleccionado un prefab
+        if (prefabSeleccionado == null)
+        {
+            Debug.LogError("Error: Debes seleccionar un prefab primero (presiona A, S o D)");
+            return;
+        }
+
+        // 1. Crear la posiciÃ³n (X puede ser 0 o donde quieras que aparezcan)
         Vector3 posicionSpawn = new Vector3(0, posicionesY[indice], 0);
 
         // 2. Instanciar
         GameObject nuevo = Instantiate(prefabSeleccionado, posicionSpawn, Quaternion.identity);
+        
         // 3. Asignar el Layer
         int layerID = LayerMask.NameToLayer(nombresLayers[indice]);
 
@@ -48,7 +56,7 @@ public partial class GameController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("¡Error! No existe el Layer llamado: " + nombresLayers[indice]);
+            Debug.LogError("Â¡Error! No existe el Layer llamado: " + nombresLayers[indice]);
         }
     }
 

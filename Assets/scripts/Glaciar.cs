@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 
 public class Glaciar : MonoBehaviour
@@ -18,10 +19,10 @@ public class Glaciar : MonoBehaviour
   //  public Renderer fadeFinal;
     public SpriteRenderer fadeFinal;
 
-
     void Start()
     {
-        
+        currentHealth = maxHealth;
+        healthBar.fillAmount = currentHealth / maxHealth;
     }
 
     // Update is called once per frame
@@ -76,18 +77,26 @@ public class Glaciar : MonoBehaviour
     void Die()
     {
         Debug.Log("FIN del juego u.u");
-        //Destroy(gameObject);
-
         canvas.enabled = false;
+        StartCoroutine(FadeToBlack());
+    }
 
-
+    IEnumerator FadeToBlack()
+    {
         Color color = fadeFinal.color;
-
-
-        color.a += 0.01f;
-
-        fadeFinal.color = color;
-
+        float fadeDuration = 2f; // Duración del fade en segundos
+        float startAlpha = color.a;
+        
+        while (color.a < 1f)
+        {
+            color.a += Time.deltaTime / fadeDuration;
+            color.a = Mathf.Clamp(color.a, startAlpha, 1f);
+            fadeFinal.color = color;
+            yield return null;
+        }
+        
+        // Opcional: Detener el juego o cargar escena de game over
+        Time.timeScale = 0f;
     }
 
 
