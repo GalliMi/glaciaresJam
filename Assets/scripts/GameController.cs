@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public partial class GameController : MonoBehaviour
 {
@@ -11,16 +12,13 @@ public partial class GameController : MonoBehaviour
     public GameObject prefabS;
     public GameObject prefabD;
 
-    public GameObject fantasmaA;
-    public GameObject fantasmaB;
-
     private GameObject prefabSeleccionado;
 
     private float seleccion;
 
 
     public float tiempoDeVidaA = 4f;
-    public float tiempoDeVidaS = 7f;
+    public float tiempoDeVidaS = 5f;
 
 
     private bool puedeA = true;
@@ -34,7 +32,11 @@ public partial class GameController : MonoBehaviour
 
     public int minerasDerrotadas= 0;
 
+
     public Canvas canvas;
+
+    bool textoLeido = false;
+    public  TextMeshProUGUI textoControles;
 
 
 
@@ -121,6 +123,16 @@ public partial class GameController : MonoBehaviour
         }
         else if (prefabSeleccionado == prefabS)
         {
+
+            if(!textoLeido)
+            {
+                textoControles.text = "Aprieta SPACE para dejar un cartel";
+                textoLeido= true;
+                Debug.Log("tutorial");
+            } else
+            {
+                textoControles.text = "";
+            }
             ultimoS = nuevo;
             cooldownS.fillAmount = 1;
             StartCoroutine(ControlarInstancia(() => puedeS = false, () => puedeS = true, () => ultimoS, cooldownS,tiempoDeVidaS));

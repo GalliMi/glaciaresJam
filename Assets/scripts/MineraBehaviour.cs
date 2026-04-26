@@ -64,6 +64,7 @@ public class MineraBehaviour : MonoBehaviour
     {
         Debug.Log("El objeto muri�");
         gameCont.minerasDerrotadas++;
+        glaciar.minerasActivas--;
         Destroy(gameObject);
     }
 
@@ -82,6 +83,8 @@ public class MineraBehaviour : MonoBehaviour
 
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
             rb.bodyType = RigidbodyType2D.Static;
+            
+            velocidad = velocidad - 0.1f;
             Debug.Log("CARTEL");
         }
 
@@ -106,7 +109,10 @@ public class MineraBehaviour : MonoBehaviour
 
             info.pausa = true;
 
-            Debug.Log("EN PERIGLACIAR");
+            //Debug.Log("EN PERIGLACIAR");
+
+            glaciar.minerasActivas--;
+
         }
     }
 }

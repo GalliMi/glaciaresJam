@@ -24,9 +24,14 @@ public class Glaciar : MonoBehaviour
 
     public GameObject[] faunaYFlora;
 
+    public AudioSource audioSource;
+    public AudioClip nuevoClip;
 
+    bool cambioAudio = false;
 
+    public GameController gameController;
 
+   public int minerasActivas = 3;
 
     //  public Renderer fadeFinal;
     public SpriteRenderer fadeFinal;
@@ -65,13 +70,34 @@ public class Glaciar : MonoBehaviour
             }
         } else if (cantidadGruas == 2)
         {
+            if (!cambioAudio)
+            {
+                audioSource.clip = nuevoClip;
+                audioSource.Play();
+                cambioAudio = true;
+            }
+
             TakeDamage(4f * Time.deltaTime);
             fondo.sprite =imagenes[1];
         } else if(cantidadGruas == 3)
         {
-            TakeDamage(8.0f * Time.deltaTime);
+            
+
+            TakeDamage(15.0f * Time.deltaTime);
             fondo.sprite = imagenes[2];
         }
+
+
+        //Debug.Log("MINERAS ACTIVAS " + minerasActivas);
+
+       /* if (minerasActivas == 0 && cantidadGruas < 3)
+        {
+            StartCoroutine(FadeToBlack());
+            audioSource.Stop();
+            canvas.enabled = false;
+
+        }*/
+
 
 
     }
@@ -95,6 +121,8 @@ public class Glaciar : MonoBehaviour
     {
         Debug.Log("FIN del juego u.u");
         canvas.enabled = false;
+        audioSource.Stop();
+
         StartCoroutine(FadeToBlack());
     }
 

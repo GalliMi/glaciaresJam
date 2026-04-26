@@ -4,6 +4,7 @@ public class cartelero : MonoBehaviour
 {
 
     public GameObject cartel;
+    public Sprite[] imagenes;
     bool dejoCartel;
 
     void Start()
@@ -26,7 +27,14 @@ public class cartelero : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             GameObject cartelInstanciado = Instantiate(cartel, transform.position, Quaternion.identity);
-            Destroy(cartelInstanciado, 8f);
+
+            int indiceRandom = Random.Range(0, imagenes.Length);
+            Sprite spriteElegido = imagenes[indiceRandom];
+
+            SpriteRenderer sr = cartelInstanciado.GetComponent<SpriteRenderer>();
+            sr.sprite = spriteElegido;
+
+            Destroy(cartelInstanciado, 10f);
 
 
             dejoCartel = true;

@@ -105,3 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::cartelero
   cartel: {fileID: 2250230861028975880, guid: 11003b133688c09418ffa993e2a49d14, type: 3}
+  imagenes:
+  - {fileID: 8695911325192975232, guid: e72b4a6cf84db6d43a8e18d3626b1bec, type: 3}
+  - {fileID: -7551999351375257849, guid: a660d1a7abb3f9c4dbc73348b4878bba, type: 3}
+  - {fileID: 6555693027915807904, guid: 9111220ad2db6d2438e6cbf269d488e2, type: 3}
