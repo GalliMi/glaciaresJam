@@ -80,9 +80,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 7
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7561650560648080838, guid: ae447e6f29e3bd14db04c313ea929ce0, type: 3}
+  m_Sprite: {fileID: -3171053082058386297, guid: 4755ff2f65206d34d910acb086541409, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,3 +107,4 @@ MonoBehaviour:
   projectilePrefab: {fileID: 7530282127842380356, guid: 3b7c7071dc7fdb340b9f3334a46a9be1, type: 3}
   shootPoint: {fileID: 5338528255423620404}
   force: 3.09
+  fireRate: 1

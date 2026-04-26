@@ -26,6 +26,7 @@ public class cartelero : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             GameObject cartelInstanciado = Instantiate(cartel, transform.position, Quaternion.identity);
+            Destroy(cartelInstanciado, 8f);
 
 
             dejoCartel = true;

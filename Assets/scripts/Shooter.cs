@@ -5,12 +5,21 @@ public class Shooter : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform shootPoint;
     public float force = 10f;
+    public float fireRate = 0.5f;
+
+    private float nextFireTime;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // click izquierdo
+        /* if (Input.GetMouseButtonDown(0)) // click izquierdo
+         {
+             Shoot();
+         }*/
+
+        if (Time.time >= nextFireTime)
         {
             Shoot();
+            nextFireTime = Time.time + 1f / fireRate;
         }
     }
 
@@ -28,5 +37,7 @@ public class Shooter : MonoBehaviour
         Vector2 direction = shootPoint.right + (shootPoint.up * 0.5f);
 
         rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+
+        Destroy(proj, 8f);
     }
 }

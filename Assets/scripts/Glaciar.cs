@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
+using UnityEngine.SceneManagement;
 
 
 public class Glaciar : MonoBehaviour
@@ -16,7 +19,16 @@ public class Glaciar : MonoBehaviour
 
     public Canvas canvas;
 
-  //  public Renderer fadeFinal;
+    public SpriteRenderer fondo;
+    public Sprite[] imagenes;
+
+    public GameObject[] faunaYFlora;
+
+
+
+
+
+    //  public Renderer fadeFinal;
     public SpriteRenderer fadeFinal;
 
     void Start()
@@ -31,7 +43,7 @@ public class Glaciar : MonoBehaviour
 
         if (periglaciarInvadido)
         {
-            Debug.Log("Cantidad gruas :::: " + cantidadGruas);
+           // Debug.Log("Cantidad gruas :::: " + cantidadGruas);
           
             if (!healthBar.gameObject.activeSelf)
             {
@@ -46,14 +58,19 @@ public class Glaciar : MonoBehaviour
 
         if(cantidadGruas == 1)
         {
-            TakeDamage(0.005f);
+            TakeDamage(0.9f * Time.deltaTime);
+            for (int i = 0; i < faunaYFlora.Length; i++)
+            {
+                faunaYFlora[i].gameObject.SetActive(false);
+            }
         } else if (cantidadGruas == 2)
         {
-            TakeDamage(0.02f);
-
+            TakeDamage(4f * Time.deltaTime);
+            fondo.sprite =imagenes[1];
         } else if(cantidadGruas == 3)
         {
-            TakeDamage(0.05f);
+            TakeDamage(8.0f * Time.deltaTime);
+            fondo.sprite = imagenes[2];
         }
 
 
@@ -96,7 +113,11 @@ public class Glaciar : MonoBehaviour
         }
         
         // Opcional: Detener el juego o cargar escena de game over
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
+
+
+
+
     }
 
 

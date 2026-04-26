@@ -83,7 +83,7 @@ public class MenuPrincipal : MonoBehaviour
                 // También configurar colores para diferentes estados
                 ColorBlock colores = botonComenzar.colors;
                 colores.normalColor = colorGrisClaro;
-                colores.highlightedColor = new Color(0.9f, 0.9f, 0.9f, 1f); // Gris más claro para hover
+                colores.highlightedColor = new Color(0.196f, 0.820f, 0.690f, 1f);
                 colores.pressedColor = new Color(0.6f, 0.6f, 0.6f, 1f); // Gris más oscuro para presionado
                 colores.selectedColor = colorGrisClaro;
                 botonComenzar.colors = colores;
@@ -103,7 +103,7 @@ public class MenuPrincipal : MonoBehaviour
                 // También configurar colores para diferentes estados
                 ColorBlock colores = botonSalir.colors;
                 colores.normalColor = colorGrisClaro;
-                colores.highlightedColor = new Color(0.9f, 0.9f, 0.9f, 1f); // Gris más claro para hover
+                colores.highlightedColor = new Color(0.196f, 0.820f, 0.690f, 1f);
                 colores.pressedColor = new Color(0.6f, 0.6f, 0.6f, 1f); // Gris más oscuro para presionado
                 colores.selectedColor = colorGrisClaro;
                 botonSalir.colors = colores;

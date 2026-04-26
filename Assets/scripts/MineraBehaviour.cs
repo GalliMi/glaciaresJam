@@ -12,25 +12,38 @@ public class MineraBehaviour : MonoBehaviour
 
     public float velocidad = 1;
 
+    public bool enPeriglaciar = false;
 
-    bool enPeriglaciar = false;
+    public infoController info;
+    public GameController gameCont;
+
 
     void Start()
+        
     {
+        
         currentHealth = maxHealth;
         healthBar.fillAmount = 1f;
-        //healthBar.value = currentHealth;
     }
 
     private void Update()
     {
 
         ///MOVIMIENTO . SI ENTRA A LA ZONA PERIGLACIAR SE DETIENE 
-        if (!enPeriglaciar)
-        {
-            transform.Translate(Vector3.left  *velocidad * Time.deltaTime);
+        ///
+     
+        
+            if (!enPeriglaciar)
+            {
+                transform.Translate(Vector3.left * velocidad * Time.deltaTime);
 
+            }
+
+        if (currentHealth <= 0)
+        {
+            Die();
         }
+
     }
 
     public void TakeDamage(float damage)
@@ -50,6 +63,7 @@ public class MineraBehaviour : MonoBehaviour
     void Die()
     {
         Debug.Log("El objeto muri�");
+        gameCont.minerasDerrotadas++;
         Destroy(gameObject);
     }
 
@@ -69,7 +83,6 @@ public class MineraBehaviour : MonoBehaviour
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
             rb.bodyType = RigidbodyType2D.Static;
             Debug.Log("CARTEL");
-           // collision.rigidbody;
         }
 
 
@@ -89,8 +102,11 @@ public class MineraBehaviour : MonoBehaviour
 
             glaciar.cantidadGruas++;
 
+            info.instancia++;
+
+            info.pausa = true;
+
             Debug.Log("EN PERIGLACIAR");
-            // collision.rigidbody;
         }
     }
 }
