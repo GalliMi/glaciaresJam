@@ -43,6 +43,10 @@ public partial class GameController : MonoBehaviour
     //  public Renderer fadeFinal;
     public SpriteRenderer fadeFinal;
 
+    public GameObject botonReintentar;
+    public GameObject botonSalir;
+
+
 
     // Las alturas Y de tus 3 filass
     public float[] posicionesY = new float[] { 2f, 0f, -2f };
@@ -197,6 +201,8 @@ public partial class GameController : MonoBehaviour
         Time.timeScale = 1f;
 
 
+        botonReintentar.SetActive(true);
+        botonSalir.SetActive(true);
 
     }
 

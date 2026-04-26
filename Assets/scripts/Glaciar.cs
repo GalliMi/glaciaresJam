@@ -36,6 +36,10 @@ public class Glaciar : MonoBehaviour
     //  public Renderer fadeFinal;
     public SpriteRenderer fadeFinal;
 
+    public GameObject botonReintentar;
+    public GameObject botonSalir;
+
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -143,7 +147,8 @@ public class Glaciar : MonoBehaviour
         // Opcional: Detener el juego o cargar escena de game over
         Time.timeScale = 1f;
 
-
+        botonReintentar.SetActive(true);
+        botonSalir.SetActive(true);
 
 
     }

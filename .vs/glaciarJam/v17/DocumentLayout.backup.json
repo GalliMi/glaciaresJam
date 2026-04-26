@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|c:\\users\\milug\\proyectos\\glaciarjam\\assets\\scripts\\glaciar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\glaciar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\minerabehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minerabehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\cartelero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cartelero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\siguegrua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\siguegrua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\cartelero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cartelero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|c:\\users\\milug\\proyectos\\glaciarjam\\assets\\scripts\\glaciar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\glaciar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|C:\\Users\\milug\\proyectos\\glaciarJam\\assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88DE922-3677-8A90-56F3-74F34846E8A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,13 +42,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "infoController.cs",
               "DocumentMoniker": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\infoController.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\infoController.cs",
               "ToolTip": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\infoController.cs",
               "RelativeToolTip": "Assets\\scripts\\infoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T18:38:10.89Z",
               "EditorCaption": ""
@@ -59,22 +59,22 @@
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\GameController.cs",
-              "ToolTip": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\GameController.cs*",
-              "RelativeToolTip": "Assets\\scripts\\GameController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAALAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\GameController.cs",
+              "RelativeToolTip": "Assets\\scripts\\GameController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwF0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T19:26:32.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Glaciar.cs",
               "DocumentMoniker": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\Glaciar.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Glaciar.cs",
               "ToolTip": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\Glaciar.cs",
               "RelativeToolTip": "Assets\\scripts\\Glaciar.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwEUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwF8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T15:28:31.743Z",
               "EditorCaption": ""
@@ -87,14 +87,14 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\MineraBehaviour.cs",
               "ToolTip": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\MineraBehaviour.cs",
               "RelativeToolTip": "Assets\\scripts\\MineraBehaviour.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwF4AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwE8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T15:25:50.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "sigueGrua.cs",
               "DocumentMoniker": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\sigueGrua.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\sigueGrua.cs",
@@ -107,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "cartelero.cs",
               "DocumentMoniker": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\cartelero.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\cartelero.cs",
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Shooter.cs",
               "DocumentMoniker": "C:\\Users\\milug\\proyectos\\glaciarJam\\Assets\\scripts\\Shooter.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Shooter.cs",
